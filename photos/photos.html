@@ -1,0 +1,14 @@
+<div class="row">
+    <h1 class="text-center">{{photos.title}}</h1>
+    <div class="col-md-8 col-md-offset-2">
+        <uib-carousel interval="photos.slideInterval">
+            <uib-slide ng-repeat="slide in photos.slides" active="slide.active">
+                <img class="img-responsive" ng-src="{{slide.image}}" style="margin:auto;">
+                <div class="carousel-caption">
+                    <h5>Slide {{slide.id}}</h5>
+                </div>
+            </uib-slide>
+        </uib-carousel>
+    </div>
+</div>
+<br/>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single WebApplication</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body ng-app="app">
+
+<header app-header></header>
+
+<div class="container">
+    <div ui-view></div>
+</div>
+
+<app-footer></app-footer>
+
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/angular/angular-ui-router.min.js"></script>
+<script src="libs/angular/angular-animate.min.js"></script>
+<script src="libs/angular/ui-bootstrap-tpls-1.1.2.min.js"></script>
+<script src="app.js"></script>
+<script src="header/header.directive.js"></script>
+<script src="footer/footer.directive.js"></script>
+<script src="factory/data.factory.js"></script>
+<script src="home/home.controller.js"></script>
+<script src="home/home.details.controller.js"></script>
+<script src="photos/photos.controller.js"></script>
+<script src="contacts/contacts.controller.js"></script>
+
+</body>
+</html>

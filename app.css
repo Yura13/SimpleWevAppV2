@@ -1,0 +1,29 @@
+.navbar-inverse {
+    border-radius:0;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    margin-bottom: 60px;
+}
+footer {
+    text-align: center;
+    background: #0e0f10;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+footer p {
+    color: #a4a7ab;
+    padding-top: 20px;
+}
+.btn-primary{
+    float: right;
+}
+.social {
+    display: inline;
+    padding: 10px;
+}
