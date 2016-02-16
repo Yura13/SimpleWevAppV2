@@ -1,5 +1,5 @@
-(function() {
-    'use strict';
+(function () {
+    "use strict";
 
     angular.module("app", ["ui.router", "ui.bootstrap", "ngAnimate"])
         .config(configApp);
@@ -11,29 +11,25 @@
             .state("home", {
                 url: "/",
                 templateUrl: "home/home.html",
-                controller: "homeController",
-                controllerAs: "info"
+                controller: "homeController as info"
             })
             .state("home.details", {
                 views: {
                     "details": {
                         templateUrl: "home/home.details.html",
-                        controller: "homeDetailsController",
-                        controllerAs: "detail"
+                        controller: "homeDetailsController as detail"
                     }
                 }
             })
             .state("photos", {
                 url: "/photos",
                 templateUrl: "photos/photos.html",
-                controller: "photosController",
-                controllerAs: "photos"
+                controller: "photosController as photos"
             })
             .state("contacts", {
                 url: "/contacts",
                 templateUrl: "contacts/contacts.html",
-                controller: "contactsController",
-                controllerAs: "contacts"
+                controller: "contactsController as contacts"
             })
     }
 

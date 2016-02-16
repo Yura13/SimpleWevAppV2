@@ -1,13 +1,13 @@
 (function() {
-    'use strict';
+    "use strict";
 
-    angular.module('app')
+    angular.module("app")
         .directive("appFooter", appFooter);
 
     function appFooter() {
         var footerDirective = {
-            restrict: 'EA',
-            templateUrl: 'footer/footer.directive.html'
+            restrict: "EA",
+            templateUrl: "footer/footer.directive.html"
         };
 
         return footerDirective;

@@ -1,15 +1,15 @@
 (function() {
-    'use strict';
+    "use strict";
 
-    angular.module('app')
+    angular.module("app")
         .directive("appHeader", appHeader);
 
     function appHeader() {
         var headerDirective = {
-            restrict: 'EA',
-            templateUrl: 'header/header.directive.html',
+            restrict: "EA",
+            templateUrl: "header/header.directive.html",
             controller: headerController,
-            controllerAs: 'vm'
+            controllerAs: "vm"
         };
 
         return headerDirective;
